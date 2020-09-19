@@ -44,3 +44,4 @@ www/shared
 _bak
 
 .env
+node_modules
