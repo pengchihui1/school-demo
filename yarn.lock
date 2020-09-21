@@ -6163,7 +6163,7 @@ video-react@^0.14.1:
     prop-types "^15.7.2"
     redux "^4.0.1"
 
-viviui@^1.7.3:
+viviui@1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/viviui/-/viviui-1.7.3.tgz#bfbf4a0a623521a97b505e3cd7d5510853675674"
   integrity sha512-Dqh5Clju0059385a0pYI4RJsk5FAin7wpgc5B2NGJMcdkp38VB5UOq8lzhdG7yLPMRfR+8E34vFRwElh0pUWCw==
