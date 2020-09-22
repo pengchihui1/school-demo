@@ -50,7 +50,7 @@ const Fieldset = ({ Line = false, children, ...props }) => {
       >
         {left}
         <Flex justify='center' align='center'>
-          {Line && (
+          {!Line && (
             <Box borderBottom='1px solid #aaa6a6' w='100%' position='absolute' zIndex='0' />
           )}
           {title}

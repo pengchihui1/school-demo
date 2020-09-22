@@ -23,7 +23,7 @@ const SchoolAttendancePage = () => {
     <Page px='0' w={{ base: '100%', md: '1280px' }}>
       {/* 頭部 */}
       <PageHeader>
-        <Fieldset title='考勤系統' background='white'>
+        <Fieldset title='考勤系統' background='white' Line>
           <LeftFieldset>
             <NextLink href=''>
               <Button
@@ -43,7 +43,7 @@ const SchoolAttendancePage = () => {
       {/* 考勤導航 */}
       <AttendanceNav urls={arr} />
       {/* 今日考勤 */}
-      <Fieldset Line>
+      <Fieldset>
         <FieldsetHeader fontSize='20px' bg='white'>今日考勤</FieldsetHeader>
       </Fieldset>
       {/* 搜索 考勤情況  全部 未到/準時 遲到 缺席 曠課 表格  分頁 */}
