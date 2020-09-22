@@ -1,14 +1,11 @@
 import React from 'react'
 import {
-  Box,
-  Button,
   Table,
   TableHead,
   TableCell,
   TableRow,
   TableBody
 } from 'viviui'
-import NextLink from 'next/link'
 
 const AttendanceTable = ({ ...props }) => {
   const title = ['姓名', '班級', '學號', '到校狀態', '缺席（次數）', '曠課（節數）', '備注']

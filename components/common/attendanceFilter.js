@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   Box,
   Input,
@@ -10,7 +10,7 @@ import {
 
 import Container from '../../components/container'
 
-const AttendanceFilter = ({ ...props }) => {
+const AttendanceFilter = ({ select = false, ...props }) => {
   const [value, setValue] = React.useState('1')
   const Attendance = [
     { name: '未到/準時', color: '#FFFFFF' },
@@ -47,10 +47,12 @@ const AttendanceFilter = ({ ...props }) => {
       </RadioGroup>
       {/* select 上午 下午 全部 未到/準時 遲到 缺席 曠課 不同的顔色   */}
       <Box d='flex' mt={2} justifyContent='center'>
-        <Select w='86px' h='30px'>
-          <option value='option1'>上午</option>
-          <option value='option2'>下午</option>
-        </Select>
+        {!select && (
+          <Select w='86px' h='30px'>
+            <option value='option1'>上午</option>
+            <option value='option2'>下午</option>
+          </Select>
+        )}
         {Attendance.map((item, i) => {
           return (
             <Box d='flex' justifyContent='center' alignItems='center' ml={6} key={i}>

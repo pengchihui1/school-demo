@@ -13,7 +13,7 @@ const AttendanceSection = ({ filter, select, ...props }) => {
   return (
     <Container>
       {/*  搜索 考勤情況  全部 未到/準時 遲到 缺席  曠課  */}
-      <AttendanceFilter />
+      <AttendanceFilter select />
       {/* table表格 */}
       <AttendanceTable />
       {/* 分頁控制 */}

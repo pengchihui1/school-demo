@@ -5,15 +5,21 @@ import {
   theme,
   ColorModeProvider
 } from 'viviui'
+import Head from 'next/head'
 
 const App = ({ children }) => {
   return (
-    <ThemeProvider theme={theme}>
-      <ColorModeProvider>
-        <CSSReset />
-        {children}
-      </ColorModeProvider>
-    </ThemeProvider>
+    <>
+      <Head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+      </Head>
+      <ThemeProvider theme={theme}>
+        <ColorModeProvider>
+          <CSSReset />
+          {children}
+        </ColorModeProvider>
+      </ThemeProvider>
+    </>
   )
 }
 
