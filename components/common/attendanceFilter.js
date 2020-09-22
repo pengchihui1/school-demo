@@ -32,6 +32,14 @@ const AttendanceFilter = ({ select = false, ...props }) => {
         <Radio value='1'>
           全部
         </Radio>
+        {/* {Attendance.map((item, i) => {
+          return (
+            <Radio value={i + 2} key={i}>
+              {item.name}
+            </Radio>
+          )
+        })} */}
+
         <Radio value='2'>
           未到/準時
         </Radio>
