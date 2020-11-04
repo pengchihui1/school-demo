@@ -1,14 +1,15 @@
-import Hello, { Left, Center, Right } from '../components/hello'
+import { Box } from 'viviui'
 
-export default () => {
+import SeriesLine from '../echarts/seriesLine' // 折線圖
+import SeriesBar from '../echarts/seriesBar' // 柱狀圖
+
+const Home = () => {
   return (
-    <div>
-      <div>hello component：</div>
-      <Hello itemOnClick={(value) => alert(value)}>
-        <Left>aaa</Left>
-        <Center>bbb</Center>
-        <Right>ccc</Right>
-      </Hello>
-    </div>
+    <Box id='root'>
+      <SeriesLine />
+      <SeriesBar />
+    </Box>
   )
 }
+
+export default Home
