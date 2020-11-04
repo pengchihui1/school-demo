@@ -12,8 +12,8 @@ const Home = () => {
     <Box id='root'>
       {/* <SeriesLine /> */}
       {/* <SeriesBar /> */}
-      <SeriesGoAway />
-      <SeriesEnter />
+      {/* <SeriesGoAway /> */}
+      {/* <SeriesEnter /> */}
       <SeriesEntryAndExit />
     </Box>
   )

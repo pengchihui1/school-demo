@@ -13,10 +13,7 @@ var arrOfObj = _.map(data1, function (name, index) {
 })
 
 const SeriesEnter = () => {
-  var colors = ['#5793f3', '#d14a61', '#675bba']
-
   const option = {
-    color: colors,
     title: {
       text: '進館時間圖'
     },
@@ -36,7 +33,7 @@ const SeriesEnter = () => {
     xAxis: [
       {
         type: 'category',
-        data: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24']
+        data: ['1點', '2點', '3點', '4點', '5點', '6點', '7點', '8點', '9點', '10點', '11點', '12點', '13點', '14點', '15點', '16點', '17點', '18點', '19點', '20點', '21點', '22點', '24點']
       }
     ],
     yAxis: [
@@ -48,7 +45,7 @@ const SeriesEnter = () => {
         position: 'left',
         axisLine: {
           lineStyle: {
-            color: colors[2]
+            // color: colors[2]
           }
         }
 
@@ -103,7 +100,11 @@ const SeriesEnter = () => {
       {
         name: '時間段',
         type: 'bar',
-        data: arrOfObj
+        data: arrOfObj,
+        markPoint: {
+          symbol: 'pin', // 标记类型
+          data: arrOfObj
+        }
       }
     ]
   }
