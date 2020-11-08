@@ -3,7 +3,7 @@ import React, { useContext } from 'react'
 export const HelloContext = React.createContext(null)
 
 const Hello = ({ children, itemOnClick }) => {
-  let left = null
+  let left = nullgit
   let right = null
   let center = null
   children.forEach(c => {
