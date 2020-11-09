@@ -3,26 +3,27 @@ import { Box, Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/core'
 const Home = () => {
   return (
     <Box>
-      <Tabs>
-        <TabList>
-          <Tab>One</Tab>
-          <Tab>Two</Tab>
-          <Tab>Three</Tab>
-        </TabList>
+      <Box style={{ width: '100%', overflow: 'hidden' }}>
+        <Box className='inner-container' style={{ overflowY: 'hidden', overflowX: 'scroll' }}>
+          <Box style={{ width: '100vh' }}>
+            <TabList>
+              <Tab>全部:120</Tab>
+            </TabList>
+          </Box>
+        </Box>
+      </Box>
 
-        <TabPanels>
-          <TabPanel>
-            <p>one!</p>
-          </TabPanel>
-          <TabPanel>
-            <p>sdfdsf!</p>
-          </TabPanel>
-          <TabPanel>
-            <p>three!</p>
-          </TabPanel>
-        </TabPanels>
-      </Tabs>
-
+      <style>
+        {`
+        .css-w6ysom{
+          margin: 5px 5px 0px;
+          }
+          /* for Chrome */
+          .inner-container::-webkit-scrollbar {
+            display: none;
+          }
+        `}
+      </style>
     </Box>
   )
 }
