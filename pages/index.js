@@ -1,14 +1,6 @@
-import Hello, { Left, Center, Right } from '../components/hello'
-
+import { Box } from 'viviui'
 export default () => {
   return (
-    <div>
-      <div>hello component：</div>
-      <Hello itemOnClick={(value) => alert(value)}>
-        <Left>aaa</Left>
-        <Center>bbb</Center>
-        <Right>ccc</Right>
-      </Hello>
-    </div>
+    <Box>123</Box>
   )
 }
