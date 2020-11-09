@@ -1,4 +1,5 @@
 import React from 'react'
+
 import {
   Tabs,
   TabList,
@@ -10,7 +11,6 @@ import {
 
 export default () => {
   return (
-    <Box>
       <div class='sub-menu_menu__20_qG'>
         <div class='sub-menu_menu-inner__1k2-4'>
           <div class='sub-menu_menu-content__36v7q'>
@@ -78,6 +78,5 @@ export default () => {
         `}
 
       </style>
-    </Box>
   )
 }
