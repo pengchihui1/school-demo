@@ -1,30 +1,23 @@
 import { Box } from 'viviui'
 import App from '../App'
-import { launch } from '@extjs/reactor'
-import { Panel, Grid, D3_HeatMap } from '@extjs/reactor/classic'
+import { launch, renderWhenReady } from '@extjs/reactor'
+import { Panel, Grid, Column } from '@extjs/reactor/classic'
 
-export default () => {
-  launch(
-    <Panel title='ExtReact'>
-      Hello World!
-    </Panel>
-    //    <Grid
-    //    columns={[
-    //      { text: 'Name', dataIndex: 'name' },
-    //      { text: 'Email', dataIndex: 'email' }
-    //    ]}
-    //    store={{
-    //      fields: ['name', 'email'],
-    //      data: [
-    //        { name: 'Tim Smith', email: 'tim101@gmail.com' },
-    //        { name: 'Jill Lindsey', email: 'jlindsey890@gmail.com' }
-    //      ]
-    //    }}
-    //  />
-  )
+const Index = () => {
+  const store = Ext.create('Ext.data.Store', {
+    fields: ['name', 'email'],
+    data: [
+      { name: 'Tim Smith', email: 'tim101@gmail.com' },
+      { name: 'Jill Lindsey', email: 'jlindsey890@gmail.com' }
+    ]
+  })
   return (
     <App>
-      <Box id='root'> 456</Box>
+      <Grid title='Users' store={store}>
+        <Column text='Name' dataIndex='name' />
+        <Column text='Email' dataIndex='email' />
+      </Grid>
     </App>
   )
 }
+export default launch(Index)
