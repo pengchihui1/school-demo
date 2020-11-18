@@ -5,6 +5,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@storybook/addon-knobs": "^6.0.28",
     "next": "^9.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
