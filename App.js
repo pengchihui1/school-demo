@@ -7,7 +7,6 @@ import {
   useColorMode
 } from 'viviui'
 import { button } from '@storybook/addon-knobs'
-import Index from './pages/index'
 
 const ColorModeSwitch = () => {
   const { toggleColorMode } = useColorMode()

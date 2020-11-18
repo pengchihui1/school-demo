@@ -1,11 +1,30 @@
-import { Box, Button } from 'viviui'
-import NextLink from 'next/link'
-
+import { Box } from 'viviui'
 import App from '../App'
+import { launch } from '@extjs/reactor'
+import { Panel, Grid, D3_HeatMap } from '@extjs/reactor/classic'
+
 export default () => {
+  launch(
+    <Panel title='ExtReact'>
+      Hello World!
+    </Panel>
+    //    <Grid
+    //    columns={[
+    //      { text: 'Name', dataIndex: 'name' },
+    //      { text: 'Email', dataIndex: 'email' }
+    //    ]}
+    //    store={{
+    //      fields: ['name', 'email'],
+    //      data: [
+    //        { name: 'Tim Smith', email: 'tim101@gmail.com' },
+    //        { name: 'Jill Lindsey', email: 'jlindsey890@gmail.com' }
+    //      ]
+    //    }}
+    //  />
+  )
   return (
     <App>
-      <NextLink href='https://blog.csdn.net/hjc256/article/details/88938515'><Button colorScheme='blue'>浏览器db事务参考博客</Button></NextLink>
+      <Box id='root'> 456</Box>
     </App>
   )
 }
