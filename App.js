@@ -7,9 +7,6 @@ import {
   useColorMode
 } from 'viviui'
 import { button } from '@storybook/addon-knobs'
-// import 'ag-grid/dist/styles/ag-grid.css'
-// import 'ag-grid/dist/styles/ag-theme-material.css'
-import 'ag-grid-enterprise'
 
 const ColorModeSwitch = () => {
   const { toggleColorMode } = useColorMode()
