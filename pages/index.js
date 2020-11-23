@@ -1,21 +1,93 @@
-import { Box, Button, useToast } from 'viviui'
-export default () => {
+import {
+  ThemeProvider,
+  CSSReset,
+  Box,
+  Stack,
+  Heading,
+  Button,
+  useToast,
+  CloseButton,
+  Alert
+} from 'viviui'
+
+function Body() {
   const toast = useToast()
   return (
-    <>
-      <Box>~cypress.io</Box>
+    <Stack m='0 auto' width='300px'>
       <Button
-        onClick={() =>
+        variant='outline'
+        variantColor='red'
+        onClick={() => {
           toast({
-            title: 'Account created.',
-            description: "We've created your account for you.",
-            status: 'success',
+            title: 'An error occurred.',
+            description: 'message',
+            status: 'error',
             duration: 9000,
             isClosable: true
-          })}
+          })
+        }}
       >
-        Show Toast
+        Example in docs fails
       </Button>
-    </>
+      <Button
+        variant='outline'
+        variantColor='red'
+        onClick={() => {
+          toast({
+            render: () => <Alert status='error'>Sad Face</Alert>,
+            duration: 9000,
+            isClosable: true
+          })
+        }}
+      >
+        Fails when using an Alert
+      </Button>
+      <Button
+        variant='outline'
+        variantColor='red'
+        onClick={() => {
+          toast({
+            render: () => (
+              <Box>
+                <Heading>Sad face</Heading>
+                <CloseButton />
+              </Box>
+            ),
+            duration: 9000,
+            isClosable: true
+          })
+        }}
+      >
+        Fails when using an Icon
+      </Button>
+      <Button
+        variant='outline'
+        variantColor='green'
+        onClick={() => {
+          toast({
+            render: () => (
+              <Box>
+                <Heading>Yay</Heading>
+              </Box>
+            ),
+            duration: 9000,
+            isClosable: true
+          })
+        }}
+      >
+        Simple render prop works
+      </Button>
+    </Stack>
   )
 }
+
+function Home() {
+  return (
+    <ThemeProvider>
+      <CSSReset />
+      <Body />
+    </ThemeProvider>
+  )
+}
+
+export default Home
