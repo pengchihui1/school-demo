@@ -1,6 +1,10 @@
 import { Box } from 'viviui'
+import App from '../App'
+
 export default () => {
   return (
-    <Box>123456</Box>
+    <App>
+      <Box>123456</Box>
+    </App>
   )
 }
