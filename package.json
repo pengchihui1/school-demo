@@ -6,10 +6,16 @@
   },
   "dependencies": {
     "@storybook/addon-knobs": "^6.1.2",
+    "antd": "^4.8.5",
+    "echarts": "^4.9.0",
+    "echarts-for-react": "^2.0.16",
+    "lodash": "^4.17.20",
     "next": "^9.5.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-grid-layout": "^1.2.0",
     "react-icons": "^3.11.0",
+    "react-scripts": "^4.0.1",
     "viviui": "^1.7.3"
   }
 }
