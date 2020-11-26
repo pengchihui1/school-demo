@@ -1,6 +1,8 @@
 import '../App.css'
+import 'ag-grid-community/dist/styles/ag-grid.css'
+import 'ag-grid-community/dist/styles/ag-theme-alpine.css'
 
-function MyApp ({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
