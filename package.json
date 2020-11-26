@@ -6,6 +6,8 @@
   },
   "dependencies": {
     "@storybook/addon-knobs": "^6.1.2",
+    "ag-grid-community": "^24.1.0",
+    "ag-grid-react": "^24.1.1",
     "antd": "^4.8.5",
     "echarts": "^4.9.0",
     "echarts-for-react": "^2.0.16",
