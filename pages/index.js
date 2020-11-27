@@ -15,7 +15,7 @@ const Home = () => {
     { make: 'Ford', model: 'Mondeo', price: 32000 },
     { make: 'Porsche', model: 'Boxter', price: 72000 }
   ])
-  function onGridReady (params) {
+  function onGridReady(params) {
     setGridApi(params.api)
     setGridColumnApi(params.columnApi)
   }
