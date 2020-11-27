@@ -8,3 +8,13 @@ export default () => {
     </App>
   )
 }
+import { Box, Button } from 'viviui'
+const Home () => {
+  return (
+    <Box>
+      <Button>"https://www.gantt.com/"</Button>
+    </Box>
+  )
+}
+
+export default Home
