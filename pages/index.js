@@ -67,6 +67,7 @@ class Home extends Component {
 
   // Normally you would want to split things out into separate components.
   // But in this example everything is just done in one place for simplicity
+  //cross-env node_env=development knex migrate:latest
   render() {
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
